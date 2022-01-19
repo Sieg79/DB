@@ -46,8 +46,4 @@ Artist_ID integer references Artists(Artist_ID),
 constraint pk3 primary key (Genre_ID, Artist_ID)
 );
 
-create table if not exists Tracks_Artists (
-Track_ID integer references Tracks(Track_ID),
-Artist_ID integer references Artists(Artist_ID),
-constraint pk4 primary key (Track_ID, Artist_ID)
-);
+
